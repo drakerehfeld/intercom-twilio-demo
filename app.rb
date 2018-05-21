@@ -5,8 +5,7 @@ require 'sinatra'
 require 'nokogiri'
 
 INTERCOM = Intercom::Client.new(
-  app_id: ENV['INTERCOM_APP_ID'],
-  api_key: ENV['INTERCOM_API_KEY']
+  token: ENV['INTERCOM_ACCESS_TOKEN ']
 )
 
 Twilio.configure do |config|
